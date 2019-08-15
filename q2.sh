@@ -3,8 +3,7 @@ echo What is your name?
 read Name
 mkdir $Name
 cd $Name
-touch "$Name"1.cpp
-touch "$Name"2.cpp
-touch "$Name"3.cpp
-touch "$Name"4.cpp
-touch "$Name"5.cpp
+for y in 1 2 3 4 5
+do
+touch $Name$y.cpp
+done
